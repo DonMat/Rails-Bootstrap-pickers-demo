@@ -3,8 +3,7 @@
       <%= f.input :title %>
       <%= f.input :description %>
 
-      <%= f.input :time, as: :string, wrapper_html: {class: 'input-group bootstrap-timepicker timepicker'} %>
-
+      <%= f.input :time, as: :string, input_html: {value: f.object.time.present? ? f.object.time.to_s(:time) : ''}, wrapper_html: {class: 'input-group bootstrap-timepicker timepicker'} %>
       <%= f.input :due_date, as: :string %>
 
       <div class='row'>
