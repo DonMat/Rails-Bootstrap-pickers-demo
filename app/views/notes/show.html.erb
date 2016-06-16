@@ -24,6 +24,11 @@
   <strong>Created at:</strong>
   <%= @note.created_at %>
 </p>
+<p>
+
+  <strong>Updated at:</strong>
+  <%= @note.updated_at %>
+</p>
 
 <%= link_to 'Edit', edit_note_path(@note) %> |
 <%= link_to 'Back', notes_path %>

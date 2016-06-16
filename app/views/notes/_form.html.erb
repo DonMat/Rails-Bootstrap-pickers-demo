@@ -1,17 +1,23 @@
 <%= simple_form_for(@note) do |f| %>
-  <%= f.error_notification %>
+    <div class="form-inputs">
+      <%= f.input :title %>
+      <%= f.input :description %>
 
-  <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :description %>
+      <%= f.input :time, as: :string, wrapper_html: {class: 'input-group bootstrap-timepicker timepicker'} %>
 
-    <%= f.input :time, as: :string, wrapper_html: {class: 'input-group bootstrap-timepicker timepicker'} %>
+      <%= f.input :due_date, as: :string %>
 
-    <%= f.input :due_date, as: :string %>
-    <%= f.input :created_at %>
-  </div>
+      <div class='row'>
+        <div class='col-md-6'>
+          <%= f.input :created_at, as: :string %>
+        </div>
+        <div class='col-md-6'>
+          <%= f.input :updated_at, as: :string %>
+        </div>
+      </div>
+    </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
 <% end %>
