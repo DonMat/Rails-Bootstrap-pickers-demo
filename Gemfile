@@ -26,7 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-datepicker-rails'
-gem 'bootstrap-timepicker-rails'
+
+# You should use git version, because of missing icons from bootstrap2 !
+# git version provide bootstrap3 glyphicon instead
+gem 'bootstrap-timepicker-rails', git: 'git://github.com/tispratik/bootstrap-timepicker-rails.git'
+
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 

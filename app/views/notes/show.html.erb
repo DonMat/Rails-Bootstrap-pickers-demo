@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<div class='page-header'>
+  <h2>
+    <%= @note.title %>
+  </h2>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <p>
+          <strong>Time:</strong>
+          <%= @note.time.to_s(:time) %>
+        </p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p>
+          <strong>Due date:</strong>
+          <%= @note.due_date %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <%= @note.description %>
+  </div>
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <p>
+          <strong>Created at:</strong>
+          <%= @note.created_at %>
+        </p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p>
+          <strong>Updated at:</strong>
+          <%= @note.updated_at %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
