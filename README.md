@@ -24,7 +24,7 @@ Feel free to contribute.
 If you have any question, open an issue and I will be happy to answer.
 
 #### What is done?
- * [x] integrated bootstrap and bootstrap pikers
+ * [x] integrated bootstrap and bootstrap pickers
  * [x] created simple scaffold to store various types of data: *date*, *time* and *datetime*
  * [x] added simple panel for note page
 
