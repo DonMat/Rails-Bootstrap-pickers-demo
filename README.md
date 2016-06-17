@@ -1,8 +1,8 @@
 # Rails Bootstrap pickers demo
 Simple Rails 4.2.6 application to show how to configure and use
-* date picker
-* time picker
-* date time picker
+* [date picker](https://github.com/Nerian/bootstrap-datepicker-rails)
+* [time picker](https://github.com/tispratik/bootstrap-timepicker-rails)
+* [date time picker](https://github.com/TrevorS/bootstrap3-datetimepicker-rails)
 
 with SimpleForm
 
@@ -11,7 +11,7 @@ with SimpleForm
 * [SimpleForm](https://github.com/plataformatec/simple_form)
 
 ### Live demo
-[Bootstrap pickers demo](http://bootstrap-pikers.herokuapp.com/)
+[Bootstrap pickers demo](http://bootstrap-pickers.herokuapp.com/)
 
 ### Installing and running
  1. Download source
